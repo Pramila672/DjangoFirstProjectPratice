@@ -1,10 +1,10 @@
 from django.http import HttpResponse , HttpResponseNotFound
-from django.views.decorators.http import require_http_methods ,require_safe
+from django.views.decorators.http import require_http_methods , require_safe
 from django.views.decorators.cache import cache_page
 
 # Create your views here.
 @cache_page(3600)
-@require_safe()
+#@require_safe()
 #@require_http_methods(["POST"])
 #@require_POST
 
